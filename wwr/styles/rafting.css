@@ -73,3 +73,18 @@ a {
 .hero article p {
   float: right; /* Float the image to the right */
 }
+
+.flexbox-container {
+  display: flex;
+
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #95ba9e;
+  background-color: #B2BEB5;
+}
+.flexbox-item-1 {
+  min-height: 100px;
+}
