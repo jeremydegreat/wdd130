@@ -1,9 +1,23 @@
 /* Ensure the full height of the page */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+/* Use flexbox for layout */
+body {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content fills the space */
+main {
+    flex: 1;
+}
+
 /* Define CSS variables for color scheme in :root */
 :root {
   --primary-color: #003366;
@@ -23,31 +37,8 @@ p {
   line-height: 1.6;
 }
 
-/* Remove underlines from social media image links */
-.social-media a {
-  text-decoration: none;
-}
-
-/* Limit the width of the page */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Main content fills the space */
-main {
-  flex: 1;
-}
-
-/* Style the Hero Container using Position Absolute */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Adjust height as needed */
-  background-image: url('path/to/hero-image.jpg');
-  background-size: cover;
-  background-position: center;
+.container {
+    display: block;
 }
 
 .hero h1 {
@@ -62,8 +53,8 @@ main {
 
 .hero article {
   position: absolute;
-  bottom: 20%;
-  left: 40%;
+  bottom: 5%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background-color: rgba(48, 34, 34, 0.603); /* White background with opacity */
   padding: 20px;
@@ -83,15 +74,18 @@ main {
   line-height: 1.6;
 }
 
+/* Footer styles */
 footer {
+    clear: both;
+    position: relative;
     background-color: #000000b7;
     padding: 20px;
     text-align: left;
     font-family: Arial, sans-serif;
-    margin-top: 0%; /* pushes the footer down */
+    color: white;
+    margin-top: 0; /* Ensure no margin pushes it up */
 }
 
-/* styling the footer */
 footer p {
     margin: 0;
     font-size: 14px;
@@ -114,36 +108,6 @@ footer .sociallinks img {
     transition: transform 0.2s;
 }
 
-footer .sociallinks img:hover { 
-    transform: scale(1.2); /* Slightly enlarge the icon on hover */ 
-}
-
-/* Styling the navigation section */
-.header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 10px;
-  background-color: aquamarine;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: aquamarine;
-  font-size: 1rem;
-}
-
-.nav a:hover {
-  color: darkblue;
+footer .sociallinks img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
 }
