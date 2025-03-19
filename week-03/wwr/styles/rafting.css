@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  justify-self: center;
 }
 
 /* Full height and flex for body */
@@ -17,7 +20,7 @@ header {
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1rem;
-  background-color: #008080;
+  background-color: #005f73;
 }
 
 .logo {
@@ -29,7 +32,7 @@ header {
 .nav {
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 5rem;
   list-style: none;
 }
 
@@ -40,8 +43,20 @@ header {
   font-weight: bold;
 }
 
+table {
+  width: 45%;
+  table-layout: fixed;
+}
+
+
+td {
+  padding: 10px;
+  text-align: center;
+  background-color: grey;
+}
+
 .nav a:hover {
-  color: #fff;
+  color: #e9e5dd;
 }
 
 /* Hero section */
@@ -55,30 +70,38 @@ header {
   padding: 2rem;
 }
 
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 .hero h1 {
   position: absolute;
-  top: 50px;
-  left: 18%;
+  top: 70px;
+  left: 20%;
   color: white;
-  font-size: 2.5rem;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .hero article {
   position: absolute;
-  bottom: 76%;
-  left: 16%;
+  bottom: 30%;
+  left: 15%;
   margin-top: 2rem;
-  background: rgba(48, 34, 34, 0.8);
+  background: rgba(48, 34, 34, 0.674);
   color: white;
-  padding: 10px;
-  width: 40%;
+  padding: 20px;
+  width: 70%;
   border-radius: 8px;
 }
 
 .hero article img {
   float: right;
   margin: 0 0 10px 10px;
-  width: 150px;
+  width: 250px;
 }
 
 .hero article p {
@@ -93,13 +116,13 @@ header {
   text-align: left;
 }
 
-.history-container {
+/* .history-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px auto;
   width: 90%;
-}
+} */
 
 .history h2 {
   color: rgb(0, 0, 0);
@@ -111,12 +134,12 @@ header {
 }
 
 
-.center-image {
+/* .center-image {
   display: block;
   max-width: 100%;
   margin: 20px auto;
   height: auto;
-}
+} */
 
 .history p {
   color: blue;
