@@ -116,13 +116,6 @@ td {
   text-align: left;
 }
 
-/* .history-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px auto;
-  width: 90%;
-} */
 
 .history h2 {
   color: rgb(0, 0, 0);
@@ -132,14 +125,6 @@ td {
 #text {
   margin-bottom: 20px;
 }
-
-
-/* .center-image {
-  display: block;
-  max-width: 100%;
-  margin: 20px auto;
-  height: auto;
-} */
 
 .history p {
   color: blue;
