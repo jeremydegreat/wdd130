@@ -14,6 +14,12 @@ nav a{
     padding: 20px;
     text-decoration: none;
 }
+
+
+main {
+    max-width: 840px;
+}
+
 main h1 {
     color: darkblue;
     padding: 3rem;
@@ -32,7 +38,7 @@ main img {
 }
 main p {
     margin: 1rem;
-    padding: 10px;
+    padding: 0;
 }
 
 main ul li a {
@@ -71,14 +77,9 @@ aside h2 {
     top: 15px;
     left: 100px;
 }
-main {
-    max-width: 840px;
-}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-}
-.indent {
-    padding: 2rem;
 }
