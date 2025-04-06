@@ -16,8 +16,8 @@ html, body {
 
 /* Header styling */
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #005f73;
@@ -29,11 +29,15 @@ header {
   font-weight: bold;
 }
 
-.nav {
+.logo img {
+  width: 20%;
+  height: 20%;
+}
+
+.nav ul {
   display: flex;
-  justify-content: flex-end;
-  gap: 5rem;
   list-style: none;
+  gap: 20px;
 }
 
 .nav a {
@@ -41,19 +45,6 @@ header {
   color: rgba(255, 167, 3, 0.988);
   font-size: 1rem;
   font-weight: bold;
-}
-
-table {
-  width: 45%;
-  table-layout: fixed;
-}
-
-
-td {
-  padding: 10px;
-  text-align: center;
-  background-color: grey;
-  text-decoration: none;
 }
 
 .nav a:hover {
@@ -69,12 +60,14 @@ td {
   background-position: center;
   background-color: #FFA500;
   padding: 2rem;
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero h1 {
@@ -106,9 +99,11 @@ td {
 }
 
 .hero article img {
+  display: block;
   float: right;
   margin: 0 0 10px 10px;
   width: 250px;
+  height: auto;
 }
 
 .hero article p {
@@ -163,6 +158,8 @@ figure {
 figure img {
   width: 100%;
   border-radius: 8px;
+  object-fit: cover;
+  display: block;
 }
 
 figcaption {
