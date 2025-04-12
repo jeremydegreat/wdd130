@@ -25,6 +25,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    
 }
 
 form {
@@ -52,12 +53,12 @@ legend {
     margin-left: 20px;
 }
 
+
 .info label {
     margin: 0 10px 0 60px;
     font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 #useremail {
     margin: 0 0 0 44px;
 }
@@ -66,7 +67,7 @@ legend {
     width: 62%;
     padding: 8px;
     margin: 8px;
-    border-color: 2px solid linear-gradient(to right, #000, #646363); /* optional visual */
+    border-color: 2px solid linear -gradient(to right, #000, #646363);
 }
 
 select {
@@ -77,22 +78,21 @@ select {
     margin-left: 10px;
 }
 
-.questions label,
-.questions p {
-    margin-top: 20px;
+.questions label {
     margin-bottom: 10px;
-    font-size: 1rem;
+    margin-top: 10px;
 }
-
 
 #pet {
     width: 10%;
     margin-right: 30px;
+
 }
 
 .pet {
     margin-left: 20px;
     margin-top: 20px;
+    
 }
 
 textarea {
@@ -111,8 +111,12 @@ button {
     font-size: 1.1rem;
 }
 
-/* ✅ Corrected selector for consistent spacing */
-.questions input,
+button:hover {
+    background-color: darkgreen;
+    transition: 0.5s;
+}
+
+.questions input
 .questions textarea,
 .questions select {
     margin-bottom: 15px;
@@ -121,4 +125,5 @@ button {
 footer {
     text-align: center;
     font-size: 1rem;
+
 }
