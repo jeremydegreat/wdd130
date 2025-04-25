@@ -57,13 +57,65 @@ header {
 }
 
 .nav a:hover {
-  color: #004080;
+  color: orangered;
 }
 
 /* Main section */
-.map iframe {
-  border: 0;
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 2rem;
 }
+
+.dark-bg {
+  background-color: #101010;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  position: absolute;
+  color: #fff; /* Text color */
+  font-size: 2.5rem;
+  top: 70px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero article {
+  position: absolute;
+  top: 190px;
+  right: 220px;
+  width: 60%;
+  margin-top: 2rem;
+  background: rgba(48, 34, 34, 0.8);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  margin: 0 0 10px 10px;
+  width: 25%;
+}
+
+/* History section */
+.history {
+  padding: 2rem;
+  text-align: start;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.history h2 {
+  color: #3300ffc0;
+  margin-bottom: 1rem;
+}
+
+/* Adventure grid */
+
 
 /* Footer */
 footer {
