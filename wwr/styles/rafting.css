@@ -14,6 +14,12 @@
   justify-self: center;
 }
 
+/* Limiting tthe page */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
 /* Full height and flex for body */
 html, body {
   background-color: #ffffff;
@@ -31,15 +37,10 @@ header {
   background-color: #005f73;
 }
 
-.logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .logo img {
   width: 15%;
   height: 15%;
+  border-radius: 8px;
 }
 
 .nav ul {
@@ -68,37 +69,35 @@ header {
   padding: 2rem;
 }
 
-.dark-bg {
-  background-color: #101010;
-  box-sizing: border-box;
-  padding: 40px;
-  text-align: center;
+.hero img {
+  object-fit: cover;
 }
 
 .hero h1 {
   position: absolute;
   color: #fff; /* Text color */
-  font-size: 2.5rem;
-  top: 70px;
-  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 92.5%;
+  font-size: 2rem;
+  top: 50px;
+  background-color: #000;
 }
 
 .hero article {
   position: absolute;
-  top: 190px;
-  right: 220px;
-  width: 60%;
+  top: 65px;
+  right: 150px;
+  width: 67%;
   margin-top: 2rem;
-  background: rgba(48, 34, 34, 0.8);
+  background: #000000ca;
   color: white;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 8px;
 }
 
 .hero article img {
   float: right;
   margin: 0 0 10px 10px;
-  width: 25%;
+  width: 20%;
 }
 
 /* History section */
