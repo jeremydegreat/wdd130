@@ -106,15 +106,55 @@ header {
   text-align: start;
   background-color: #f0f0f0;
   color: #000;
+  letter-spacing: 1px;
 }
 
 .history h2 {
-  color: #3300ffc0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
   margin-bottom: 1rem;
+  background: rgb(0, 0, 0, 0.7);
 }
 
 /* Adventure grid */
+.adventures {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: auto;
+}
 
+.adventures h2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.adventures figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.adventures figcaption {
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  text-align: center;
+}
 
 /* Footer */
 footer {
