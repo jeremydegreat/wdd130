@@ -200,13 +200,47 @@ header {
 
 /* Main form section styling */
 .form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   background-color: #f0f0f0;
   padding: 20px;
+  margin-top: 20px;
 }
 
-/* Footer */
+label {
+  font-size: 1.1rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#username {
+width: 50%;
+margin: 5px;
+border: 1px solid blue;
+}
+#email {
+  width: 50%;
+  margin: 5px 0 40px 43px;
+  border: 1px solid blue;
+}
+#username, #email {
+  border-radius: 5px;
+  padding: 10px;
+}
+#sub-heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.radio label {
+  font-size: 17px;
+}
+.radio input {
+  order: 0;
+  margin-bottom: -30px;
+}
+
+
+/* Footer styling */
 footer {
   background-color: #2A2A2A;
   display: flex;
