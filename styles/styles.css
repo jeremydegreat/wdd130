@@ -73,6 +73,8 @@ aside img {
     height: auto;
 }
 aside h2 {
+    color: white;
+    text-shadow: 1px 5px 3px #000;
     position: absolute;
     top: 15px;
     left: 100px;
