@@ -1,9 +1,19 @@
+:root {
+  --font-primary: 'montserrat', sans-serif;
+  --primary-color: #003366;
+  --secondary-color: #FFFFFF;
+  --accent1: #FFA500;
+  --accent2: #6F00FF;
+
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     text-align: center;
   }
 }
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -15,13 +25,16 @@
 }
 
 /* Limiting tthe page */
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* Full height and flex for body */
-html, body {
+html,
+body {
   background-color: #ffffff;
   color: #000000;
   height: 100%;
@@ -43,7 +56,7 @@ header {
   border-radius: 8px;
 }
 
-.nav ul {
+.nav {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -75,7 +88,7 @@ header {
 
 .hero h1 {
   position: absolute;
-  color: #fff; /* Text color */
+  color: #fff;
   width: 92.5%;
   font-size: 2rem;
   top: 50px;
@@ -131,7 +144,7 @@ header {
 }
 
 .adventures h2 {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   margin: 0;
@@ -156,6 +169,8 @@ header {
   text-align: center;
 }
 
+
+/* Contact Us Page Css styling */
 /* Main  first section styling */
 .map-guide h1 {
   font-size: 2rem;
@@ -200,32 +215,36 @@ header {
 
 /* Main form section styling */
 .form {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: auto;
   background-color: #f0f0f0;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 label {
   font-size: 1.1rem;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #username {
-width: 50%;
-margin: 5px;
-border: 1px solid blue;
+  width: 50%;
+  margin: 5px;
 }
+
 #email {
   width: 50%;
   margin: 5px 0 40px 43px;
-  border: 1px solid blue;
 }
-#username, #email {
+
+#username,
+#email {
   border-radius: 5px;
   padding: 10px;
+  border: 1px solid #000000a1;
 }
+
 #sub-heading {
   font-size: 25px;
   font-weight: bold;
@@ -233,10 +252,12 @@ border: 1px solid blue;
 
 .radio label {
   font-size: 17px;
+  margin-top: 20px;
 }
+
 .radio input {
   order: 0;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
 }
 
 
@@ -249,13 +270,16 @@ footer {
   color: #F2F2F2;
 }
 
-footer .sociallinks img {
+.sociallinks a {
+  text-decoration: none;
+}
+.sociallinks img {
   width: 30px;
   margin: 0 0.5rem;
   align-self: flex-end;
   transition: transform 0.2s;
 }
 
-footer .sociallinks img:hover {
+.sociallinks img:hover {
   transform: scale(1.2);
 }
