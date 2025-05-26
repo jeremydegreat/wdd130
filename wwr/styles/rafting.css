@@ -231,51 +231,15 @@ header {
 }
 
 /* Main form section styling */
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
-}
+} */
 
-label {
-  font-size: 1.1rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#username {
-  width: 50%;
-  margin: 5px;
-}
-
-#email {
-  width: 50%;
-  margin: 5px 0 40px 43px;
-}
-
-#username,
-#email {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #000000a1;
-}
-
-#sub-heading {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.radio label {
-  font-size: 17px;
-  margin-top: 20px;
-}
-
-.radio input {
-  order: 0;
-  margin-bottom: -20px;
-}
 
 
 /* Footer styling */
