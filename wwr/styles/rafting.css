@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
 }
 
 /* Limiting tthe page */
@@ -88,6 +87,7 @@ header {
 
 .hero img {
   object-fit: cover;
+  width: 100%;
 }
 
 .hero h1 {
@@ -166,6 +166,7 @@ header {
   left: 0;
   margin: 0;
   padding: 10px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
   color: #fff;
@@ -205,42 +206,104 @@ header {
 }
 
 /* Main second section styling */
-.team h2 {
+.team-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.team-gallery h2 {
   color: #ffffff;
+  font-size: 1.5rem;
   background-color: #000000a1;
   text-align: center;
   padding: 10px;
   margin: 10px;
 }
 
-.figure {
-  background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
+.team-gallery figure img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.figure img {
-  width: 100%;
-  height: auto;
-}
-
-.figure figcaption {
+.team-gallery figcaption {
   text-align: center;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 /* Main form section styling */
-/* .form {
+.form {
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
-} */
+  border: 1px solid red;
+}
 
+label {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #002233;
+}
 
+#label-email {
+  margin: 0 0 0 35px;
+}
+
+#username, #email {
+  margin: 0 0 10px 10px;
+  padding: 5px;
+  width: 50%;
+  border: 2px solid grey;
+  border-radius: 2px;
+}
+
+#sub-heading {
+  display: block;
+  text-align: start;
+  margin: 10px auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+#your-message {
+  display: block;
+  margin: 15px 0 15px 0;
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+#message {
+  margin: 0 0 10px 97px;
+  border: 2px solid grey;
+  width: 50%;
+  height: 200px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 30px 0 20px 200px;
+  padding: 10px 20px;
+  color: red;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0055aa;
+}
 
 /* Footer styling */
 footer {

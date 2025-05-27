@@ -46,58 +46,44 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="team">
+        <section class="team-gallery">
             <div>
                 <h2><strong>Meet our Team</strong></h2>
-                <div class="figure">
-                    <figure>
-                        <img src="images/employee1.webp" alt="Raft Guide" width="100" height="100">
-                        <figcaption>Raft Guide</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee2.webp" alt="Trip Leader" width="100" height="100">
-                        <figcaption>Trip Leader</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee3.webp" alt="Safety Kayaker" width="100" height="100">
-                        <figcaption>Safety Kayaker</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee4.webp" alt="Gear Manager" width="100" height="100">
-                        <figcaption>Gear Manager</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee5.webp" alt="Shuttle Driver" width="100" height="100">
-                        <figcaption>Shuttle Driver</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee6.webp" alt="Photographer" width="100" height="100">
-                        <figcaption>Photographer</figcaption>
-                    </figure>
-                </div>
+                <figure>
+                    <img src="images/employee1.webp" alt="Raft Guide-profile image" width="100" height="100">
+                    <figcaption>Raft Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.webp" alt="Trip Leader- profile image" width="100" height="100">
+                    <figcaption>Trip Leader</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.webp" alt="Safety Kayaker- profile image" width="100" height="100">
+                    <figcaption>Safety Kayaker</figcaption>
+                </figure>
             </div>
         </section>
         <section class="form">
-            <form action="">
-                <label for="username">username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="Email">Email:</label>
+            <form action="/submit" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email" id="label-email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br />
                 <label id="sub-heading">Purpose Of Message</label>
-                <div>
-                    <input type="radio" id="general" name="Purpose" value="general">
-                    <label for="general">General Inquiry</label>
-                    <input type="radio" id="reservation" name="Purpose" value="reservation">
-                    <label for="reservation">Rservatiion Questions</label>
+                <div class="radio">
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Rservation Questions</label><br>
                     <input type="radio" id="suggestion" name="purpose" value="suggestion">
                     <label for="suggestion">Website Suggestions</label>
                 </div>
-                <label for="message">Your Message</label>
+                <label id="your-message">Your Message</label>
                 <textarea name="message" id="message" rows="5" required></textarea>
                 <div>
-                    <input type="checkbox" name="subscribe" value="subscribe">
-                    <label for="subscribe">subscribe</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                    <label for="subscribe">Subscribe To Our Newletters</label>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
