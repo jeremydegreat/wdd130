@@ -42,29 +42,32 @@
                 </div>
             </section>
             <section class="form">
-                <form action="/submit" method="post">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required><br>
-                    <label for="email" id="label-email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br />
-                    <label id="sub-heading">Purpose Of Message</label>
-                    <div class="radio">
-                        <input type="radio" id="general" name="purpose" value="general">
-                        <label for="general">General Inquiry</label><br>
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Questions</label><br>
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        <label for="suggestion">Website Suggestions</label>
-                    </div>
-                    <label id="your-message">Your Message</label>
-                    <textarea name="message" id="message" rows="5" required></textarea>
-                    <div>
-                        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-                        <label for="subscribe">Subscribe To Our Newletters</label>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <form action="/submit" method="post">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                        <br />
+                        <label id="sub-heading">Purpose Of Message</label>
+                        <div class="radio">
+                            <input type="radio" id="general" name="purpose" value="general">
+                            <label for="general">General Inquiry</label><br>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Questions</label><br>
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestions</label>
+                        </div>
+                        <label id="your-message">Your Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                        <div>
+                            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                            <label for="subscribe">Subscribe To Our Newletters</label>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </fieldset>
             </section>
         </div>
         <section class="team-container">
