@@ -381,3 +381,8 @@ footer {
 .sociallinks img:hover {
   transform: scale(1.2);
 }
+
+.wireframe a {
+  text-decoration: none;
+  color: red;
+}
