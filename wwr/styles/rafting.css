@@ -190,19 +190,43 @@ header {
 
 /* Contact Us Page Css styling */
 /* Main  first section styling */
-.map-guide h1 {
-  font-size: 2rem;
-  color: blue;
-  text-shadow: 1px 1px 1px black;
+.main-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #006073b0;
+  margin: 30px auto;
+}
+
+.contact-info {
+  flex: 1;
+  width: 400px;
+  height: 90%;
+  background-color: #000;
+  color: white;
   margin-top: 20px;
+  padding: 0;
+}
+.contact-info h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 20px 0 10px 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.map-guide h2 {
-  color: blue;
-}
-
-.map-guide p {
+.contact-info p {
   font-size: 1.5em;
+  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+
+.map-guide iframe {
+  display: block;
+  width: 400px;
+  height: 350px;
+  border: none;
 }
 
 /* Main second section styling */
