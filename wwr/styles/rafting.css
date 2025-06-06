@@ -261,7 +261,12 @@ header {
   font-size: 2.0rem;
   font-weight: bold;
   font-family: Verdana, sans-serif;
-  color: #ff7043;
+}
+
+.form,
+#sub-heading,
+#your-message {
+  color: #8b2c00;
 }
 
 .form label {
@@ -284,14 +289,13 @@ header {
   margin: 10px auto;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ff7043;
 }
 
 #your-message {
   display: block;
   margin: 15px 0 15px 0;
   font-size: 1.2rem;
-  color: #ff7043;
+  color: #8b2c00;
 }
 
 #message {
@@ -303,6 +307,8 @@ header {
 
 input[type="text"],
 input[type="email"] {
+  background-color: #fff;
+  color: #000;
   font-size: 1rem;
   padding: 10px;
   width: 100%;
@@ -314,6 +320,7 @@ textarea {
 }
 
 input::placeholder {
+  color: #666;
   font-style: italic;
 }
 
@@ -369,35 +376,6 @@ button[type="submit"]:hover {
   text-align: center;
   font-weight: bold;
   margin-top: 8px;
-}
-
-
-/* Footer styling */
-footer {
-  background-color: #000;
-  display: flex;
-  padding: 1rem;
-  text-align: center;
-  color: #F2F2F2;
-}
-
-.sociallinks a {
-  text-decoration: none;
-}
-.sociallinks img {
-  width: 30px;
-  margin: 0 0.5rem;
-  align-self: flex-end;
-  transition: transform 0.2s;
-}
-
-.sociallinks img:hover {
-  transform: scale(1.2);
-}
-
-.wireframe a {
-  text-decoration: none;
-  color: red;
 }
 
 /* Home Page styling */
@@ -559,6 +537,35 @@ figure img.fg-image {
 #hm-button {
   width: 60%;
   padding: 15px;
+}
+
+
+/* Footer styling */
+footer {
+  background-color: #000;
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+.sociallinks img {
+  width: 30px;
+  margin: 0 0.5rem;
+  align-self: flex-end;
+  transition: transform 0.2s;
+}
+
+.sociallinks img:hover {
+  transform: scale(1.2);
+}
+
+.wireframe a {
+  text-decoration: none;
+  color: white;
 }
 
 
