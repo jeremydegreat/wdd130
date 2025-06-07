@@ -77,6 +77,8 @@ header {
   color: orangered;
 }
 
+
+/* About Us Page */
 /* Main section */
 .hero {
   display: flex;
@@ -184,11 +186,14 @@ header {
 }
 
 .adventures figure img {
+  padding: .3rem;
   width: 100%;
   margin: -15px 0 0;
   height: 30vh;
   display: block;
   object-fit: cover;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .adventures figcaption {
@@ -552,7 +557,6 @@ figure img.fg-image {
 /* Trip page for rafting Site */
 .trip-container {
   margin: auto;
-  padding: auto;
 }
 
 .trip-hero img {
@@ -572,7 +576,7 @@ figure img.fg-image {
   font-family: Verdana, Tahoma, sans-serif;
 }
 
-.trip-hero a button {
+.trip-hero form button {
   position: absolute;
   top: 35%;
   right: 42%;
@@ -584,7 +588,7 @@ figure img.fg-image {
   background-color: #006073;
 }
 
-.trip-hero a button:hover {
+.trip-hero form button:hover {
   background-color: #01323b;
   transition: 0.05s ease;
 }
@@ -662,7 +666,7 @@ figure img.fg-image {
   width: 350px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   background: #f2f2f2;
   font-family: sans-serif;
 }
