@@ -7,12 +7,8 @@
 
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+@media screen and (max-width: 768px) {
+  
 
 /* Basic Reset */
 * {
@@ -82,6 +78,8 @@ header {
 /* Main section */
 .hero {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   text-align: center;
   padding: 0;
@@ -95,24 +93,25 @@ header {
 
 .hero h1 {
   position: absolute;
+  top: 0;
   color: #fff;
   padding: 10px;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.2rem;
   top: 10px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero article {
   position: absolute;
   top: 40px;
-  right: 20px;
-  width: 90%;
-  margin-top: 2rem;
+  right: 0;
+  width: 100%;
+  margin: 1rem auto;
   background: rgba(0, 96, 115, 0.6);
   color: #ffffff;
-  padding: .5rem;
-  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
 .hero article img {
@@ -721,3 +720,4 @@ footer {
 }
 
 
+}
