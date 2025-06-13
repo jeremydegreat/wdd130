@@ -6,8 +6,6 @@
   --accent2: #6F00FF;
 
 }
-
-@media screen and (max-width: 768px) {
   
 
 /* Basic Reset */
@@ -21,7 +19,7 @@
 header,
 main,
 footer {
-  width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -717,7 +715,4 @@ footer {
 .wireframe a {
   text-decoration: none;
   color: white;
-}
-
-
 }
