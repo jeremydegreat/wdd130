@@ -286,8 +286,7 @@ header {
   color: #fff;
   padding: 10px;
   width: 100%;
-  font-size: 1.2rem;
-  top: 10px;
+  font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -303,14 +302,18 @@ header {
   font-size: 0.9rem;
 }
 
+.hero article h2 {
+  font-size: 1.2rem;
+  margin-bottom: .5em;
+}
+
 .hero article img {
   float: right;
-  margin: 0 0 10px 10px;
-  width: 20%;
+  width: 15%;
   height: auto;
 }
 
-/* History section */
+/* ---History section--- */
 .history-section {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -330,31 +333,35 @@ header {
   margin-bottom: 1rem;
 }
 
-.history-start, .history-end {
+.history-section p {
   font-size: .9rem;
   padding: 1rem;
 }
 
-.history-image {
+.history-section div img {
+  display: block;
+  padding: .3rem;
   width: 100%;
   margin-top: 15px;
   height: auto;
   border-radius: 5px;
   object-fit: cover;
-  display: block;
+  background-color: #fff;
+  box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.4);
+  
 }
 
-/* Adventure grid */
+/* ---Adventure grid--- */
 .adventures-container {
   padding: 0;
   margin: 0;
 }
 
 .adventures-container h2 {
-  margin-bottom: 20px;
+  margin: 20px 0 ;
   padding: 0;
-  width: 100%;
   font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
   text-align: center;
 }
@@ -362,7 +369,7 @@ header {
 .adventures {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-top: 50px;
+  padding-top: 10px;
   gap: 10px;
   margin: auto;
 }
@@ -374,14 +381,11 @@ header {
 }
 
 .adventures figure img {
-  padding: .3rem;
+  display: block;
   width: 100%;
   margin: -15px 0 0;
   height: 30vh;
-  display: block;
   object-fit: cover;
-  background-color: #fff;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .adventures figcaption {
@@ -395,7 +399,148 @@ header {
   text-align: center;
 }
 
-/* Contact Us Page Css styling */
+
+/* --------------Trip page for rafting Site--------------- */
+.trip-container {
+  margin: auto;
+}
+
+.trip-hero img {
+  position: relative;
+  width: 100%;
+}
+
+.trip-hero h1 {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  color: #fff;
+  padding: 10px;
+  background-color: #0000005f;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.trip-hero a {
+  position: absolute;
+  display: block;
+  top: 35%;
+  right: 42%;
+  width: 20%;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #006073;
+}
+
+.trip-hero a:hover {
+  background-color: #01323b;
+  transition: 0.05s ease;
+}
+
+.trip-table {
+  text-align: start;
+  vertical-align: center;
+  margin: 1rem;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trip-table h2 {
+  margin: 60px 0 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.trip-table table {
+  border-collapse: separate;
+  border-spacing: 5px 10px;
+  width: 100%;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.trip-table thead th {
+  text-align: start;
+  background-color: #ddd;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.trip-table tbody tr:nth-child(even) {
+  background-color: #d7ccf3;
+}
+
+.trip-table tbody tr:nth-child(odd) {
+  background-color: #e5e1e1;
+}
+
+.trip-table tbody td {
+  font-weight: 500;
+}
+
+.trip-card-details {
+  background-color: lightgrey;
+  margin-bottom: 30px;
+}
+
+.trip-card-details h2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.trip-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+.trip-card {
+  margin: .7rem;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trip-card div h3 {
+  text-align: start;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.trip-card div p {
+  margin: 10px;
+  padding: 1px;
+}
+
+
+/* ------------Contact Us Page Css styling------------ */
 /* Main  first section styling */
 .main-container {
   display: flex;
@@ -574,144 +719,6 @@ button[type="submit"]:hover {
   text-align: center;
   font-weight: bold;
   margin-top: 8px;
-}
-
-
-
-/* --------------Trip page for rafting Site--------------- */
-.trip-container {
-  margin: auto;
-}
-
-.trip-hero img {
-  position: relative;
-  width: 100%;
-}
-
-.trip-hero h1 {
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  color: #fff;
-  padding: 10px;
-  background-color: #0000005f;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-
-.trip-hero form button {
-  position: absolute;
-  top: 35%;
-  right: 42%;
-  width: 15%;
-  color: #fff;
-  font-size: 1.3rem;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: #006073;
-}
-
-.trip-hero form button:hover {
-  background-color: #01323b;
-  transition: 0.05s ease;
-}
-
-.trip-table {
-  text-align: start;
-  vertical-align: center;
-  margin: 1rem;
-  padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.trip-table h2 {
-  margin: 60px 0 10px 0;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.trip-table table {
-  border-collapse: separate;
-  border-spacing: 5px 10px;
-  width: 100%;
-}
-
-.trip-table th,
-.trip-table td {
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-}
-
-.trip-table thead th {
-  text-align: start;
-  background-color: #ddd;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #000;
-}
-
-.trip-table tbody tr:nth-child(even) {
-  background-color: #d7ccf3;
-}
-
-.trip-table tbody tr:nth-child(odd) {
-  background-color: #e5e1e1;
-}
-
-.trip-table tbody td {
-  font-weight: 500;
-}
-
-.trip-card-details {
-  background-color: lightgrey;
-  margin-bottom: 30px;
-}
-
-.trip-card-details h2 {
-  text-align: center;
-  padding: 30px;
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-.trip-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-}
-
-
-.trip-card {
-  margin: .7rem;
-  width: 350px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: #f2f2f2;
-  font-family: sans-serif;
-}
-
-.trip-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.trip-card div h3 {
-  text-align: start;
-  padding: 20px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-
-.trip-card div p {
-  margin: 10px;
-  padding: 1px;
 }
 
 
