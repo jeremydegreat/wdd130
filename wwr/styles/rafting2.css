@@ -1,134 +1,224 @@
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-/* Basic Reset */
+/* ---------- Global Styles ---------- */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
-  justify-self: center;
 }
 
-/* Limiting tthe page */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f4f4f4;
 }
 
-/* Full height and flex for body */
-html, body {
-  background-color: #ffffff;
-  color: #000000;
-  height: 100%;
-  font-family: Arial, sans-serif;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Header styling */
+/* ---------- Header ---------- */
 header {
+  background-color: #006494;
+  color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #005f73;
 }
 
 .logo img {
-  width: 15%;
-  height: 15%;
-  border-radius: 8px;
+  width: 80px;
+  height: 80px;
 }
 
-.nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  margin-top: 1rem;
+.nav {
+  margin-top: 0.5rem;
 }
 
 .nav a {
-  text-decoration: none;
   color: white;
-  font-size: 1rem;
+  text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
 }
 
 .nav a:hover {
-  color: orangered;
+  text-decoration: underline;
 }
 
-/* Main  first section styling */
-.map-guide h1 {
-  font-size: 2rem;
-  color: blue;
-  text-shadow: 1px 1px 1px black;
-  margin-top: 20px;
-}
-
-.map-guide h2 {
-  color: blue;
-}
-
-.map-guide p {
-  font-size: 1.5em;
-}
-
-/* Main second section styling */
-.team h2 {
-  color: #ffffff;
-  background-color: #000000a1;
+/* ---------- Hero Section ---------- */
+.hm-main-container {
+  position: relative;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
 }
 
-.figure {
-  background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.figure img {
+.hm-main-container img {
   width: 100%;
   height: auto;
 }
 
-.figure figcaption {
-  text-align: center;
+.hm-hero-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-/* Main form section styling */
-.form {
+.hm-hero-content h1 {
+  font-size: 1.8rem;
+}
+
+.hm-hero-content h2 {
+  font-size: 1rem;
+}
+
+.hm-hero-content a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ff6b35;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* ---------- Newsletter Form ---------- */
+.hm-hero-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.hm-hero-form h2 {
+  margin-bottom: 10px;
+}
+
+.hm-hero-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#hm-button2 {
+  background-color: #006494;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+/* ---------- Adventure Gallery ---------- */
+.hm-adventure-gallery {
   display: flex;
   flex-direction: column;
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-
-
-/* Footer */
-footer {
-  background-color: #2A2A2A;
-  display: flex;
+  align-items: center;
   padding: 1rem;
+  gap: 1rem;
+  background-color: #e6f2ff;
+}
+
+.hm-adventure-gallery figure {
   text-align: center;
-  color: #F2F2F2;
 }
 
-footer .sociallinks img {
-  width: 30px;
-  margin: 0 0.5rem;
-  align-self: flex-end;
-  transition: transform 0.2s;
+/* ---------- Join Section ---------- */
+.hm-join-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
 }
 
-footer .sociallinks img:hover {
-  transform: scale(1.2);
+.hm-join-page img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.hm-join-page button {
+  background-color: #006494;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sociallinks a {
+  margin: 0 10px;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Tablets */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .nav {
+    margin-top: 0;
+  }
+
+  .hm-adventure-gallery {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hm-join-page {
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hm-join-page img {
+    flex: 1;
+  }
+
+  .hm-join-page div {
+    flex: 1;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .hm-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hm-hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hm-hero-form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: rgba(255, 255, 255, 0.95);
+  }
 }
