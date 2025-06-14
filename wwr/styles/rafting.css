@@ -32,7 +32,7 @@ body {
   font-family: var(--font-primary);
 }
 
-/* Header styling */
+/* ----------------Header styling----------------- */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -71,8 +71,192 @@ header {
   color: orangered;
 }
 
+/* -------------Home Page of rafting site-------------- */
+/* Home Page styling */
+.hm-main-container {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
-/* About Us Page */
+.hm-main-container img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-top: -10px;
+}
+
+.hm-hero-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  text-align: center;
+  color: #fff;
+}
+
+.hm-hero-content h1 {
+  margin: 10px auto;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.hm-hero-content h2 {
+  margin: 20px auto;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.hm-main-container div a {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  padding: 1em;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 1em;
+  background-color: #005f73;
+}
+
+.hm-main-container div a:hover {
+  background-color: #01242c;
+  transition: 0.05s ease;
+}
+
+.hm-hero-form {
+  position: absolute;
+  top: 60%;
+  left:25%;
+  transform: translate(10%, 30%);
+  margin-right: 40px;
+  padding: 10px;
+  width: 50%;
+  height: 40%;
+  background-color: #005f73;
+  border-radius: 25px;
+}
+
+.hm-hero-form h2 {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.hm-hero-form form label {
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  text-align: start;
+}
+
+.hm-hero-form form input {
+  display: inline-block;
+  margin: 10px 0 5px 0;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.hm-hero-form form button {
+  display: block;
+  margin: 15px auto 60px;
+  padding: 10px;
+  width: 60%;
+  background-color: #000;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px whitesmoke;
+}
+
+.hm-hero-content form #button2:hover {
+  background-color: #cc5200;
+  transition: 0.3s ease;
+}
+
+.hm-adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin: 12em 0;
+  padding: 0;
+}
+
+.hm-adventure-gallery figure {
+  display: block;
+}
+
+.hm-adventure-gallery figure img {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+figure img.fg-image {
+  width: 40%;
+  margin: 10px 0 0 75px;
+  box-shadow: none;
+}
+
+.hm-adventure-gallery figure figcaption {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hm-join-page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: #003366;
+  margin-bottom: 50px;
+}
+
+.hm-join-page img {
+  position: absolute;
+  bottom: 15%;
+  left: 6%;
+  width: 55%;
+  height: 400px;
+}
+
+.hm-join-page div {
+  position: absolute;
+  padding: 20px;
+  top: 25%;
+  left: 50%;
+  width: 45%;
+  height: 300px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(223, 227, 181, 0.7);
+}
+
+.hm-join-page div h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.hm-join-page div p {
+  font-size: 14px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.hm-join-page div button {
+  width: 60%;
+  padding: 15px;
+  background-color: #003366;
+}
+
+
+/* -------------------About Us Page-------------------- */
 /* Main section */
 .hero {
   display: flex;
@@ -385,185 +569,9 @@ button[type="submit"]:hover {
   margin-top: 8px;
 }
 
-/* -------------Home Page of rafting site-------------- */
-/* Home Page styling */
-.hm-main-container {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.hm-main-container img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  margin-top: -10px;
-}
-
-.hm-hero-content {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%);
-  text-align: center;
-  color: #fff;
-}
-
-.hm-hero-content h1 {
-  margin: 10px auto;
-  font-size: 2rem;
-  text-shadow: 2px 2px 5px black;
-}
-
-.hm-hero-content h2 {
-  margin: 20px auto;
-  font-size: 2rem;
-  text-shadow: 2px 2px 5px black;
-}
-
-.hm-main-container div a {
-  margin: 1em auto;
-  padding: 1em;
-  color: #fff;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 1em;
-  background-color: #005f73;
-}
-
-.hm-hero-form {
-  position: absolute;
-  top: 60%;
-  left:25%;
-  margin-right: 40px;
-  padding: 10px;
-  width: 50%;
-  background-color: #005f73;
-  border-radius: 25px;
-}
-
-.hm-hero-form h2 {
-  color: #fff;
-  font-size: 20px;
-  padding: 10px 15px;
-  text-align: start;
-}
-
-.hm-hero-form form label {
-  padding: 10px;
-  font-size: 15px;
-  color: #fff;
-  text-align: start;
-}
-
-.hm-hero-form form input {
-  margin: 10px 0 5px 5px;
-  width: 60%;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-#hm-email {
-  margin-left: 3px;
-}
-
-.hm-hero-form form button {
-  margin: 15px 60px;
-  padding: 10px;
-  width: 60%;
-  background-color: #000;
-  cursor: pointer;
-  box-shadow: 3px 3px 8px whitesmoke;
-}
-
-.hm-hero-content form #button2:hover {
-  background-color: #cc5200;
-  transition: 0.3s ease;
-}
-
-.hm-adventure-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  margin: 12em 0;
-  padding: 0;
-}
-
-.hm-adventure-gallery figure {
-  display: block;
-}
-
-.hm-adventure-gallery figure img {
-  padding: 10px;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-figure img.fg-image {
-  width: 40%;
-  margin: 10px 0 0 75px;
-  box-shadow: none;
-}
-
-.hm-adventure-gallery figure figcaption {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-}
-
-.hm-join-page {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  background-color: #003366;
-  margin-bottom: 50px;
-}
-
-.hm-join-page img {
-  position: absolute;
-  bottom: 15%;
-  left: 6%;
-  width: 55%;
-  height: 400px;
-}
-
-.hm-join-page div {
-  position: absolute;
-  padding: 20px;
-  top: 25%;
-  left: 50%;
-  width: 45%;
-  height: 300px;
-  background-color: white;
-  box-shadow: 5px 5px 15px rgba(223, 227, 181, 0.7);
-}
-
-.hm-join-page div h2 {
-  font-size: 35px;
-  font-weight: bold;
-  font-family: Verdana, Tahoma, sans-serif;
-  color: #003366;
-  margin-bottom: 10px;
-}
-
-.hm-join-page div p {
-  font-size: 14px;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-.hm-join-page div button {
-  width: 60%;
-  padding: 15px;
-  background-color: #003366;
-}
 
 
-/* Trip page for rafting Site */
+/* --------------Trip page for rafting Site--------------- */
 .trip-container {
   margin: auto;
 }
