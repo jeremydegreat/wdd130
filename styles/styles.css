@@ -15,6 +15,12 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover {
+    width: 15%;
+    color: aliceblue;
+    background-color: #000;
+}
+
 
 main {
     max-width: 840px;
