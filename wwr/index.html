@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page | The Rapids Whitewater Rafting Site</title>
-    <link rel="icon" href="images/my-favicon.png">
     <meta name="description" content=" This is home page for rapids whitewater rafting site">
     <meta name="author" content="Jeremy Great">
+
+    <!-- LINKS -->
     <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="icon" href="images/myFavicon.webp" type="image/x-icon">
+    <title>Home Page | The Rapids Whitewater Rafting Site</title>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="images/raftinglogo.webp" alt="Rapids Whitewater Rafting" width="100" height="100">
         </div>
-        <nav class="nav">
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <div class="hm-main-container">
-            <img src="images/hero_transparency.webp" alt=" This is bg-image">
+    <main class="home-page">
+        <img src="images/hero_transparency.webp" alt=" The hero image">
+        <section class="hm-main-container">
             <div class="hm-hero-content">
                 <h1>Have an adventure</h1>
-                <h2>make memories with rapids whitewater</h2>
+                <p>make memories with rapids whitewater</p>
                 <a href="trips.html">Book Now</a>
             </div>
             <div class="hm-hero-form">
                 <form action="#" method="post">
                     <h2>Sign up for our monthly newsletters</h2>
-                    <label for="fullname">Enter your name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="first last">
-                    <label for="hm-email">Enter your e-mail:</label>
-                    <input type="email" id="hm-email" name="email" placeholder="name@example.com">
+                    <div class="form-group">
+                        <label for="fullname">Enter your name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="first last">
+                    </div>
+                    <div class="form-group">
+                        <label for="hm-email">Enter your e-mail:</label>
+                        <input type="email" id="hm-email" name="email" placeholder="name@example.com">
+                    </div>
                     <button type="submit" id="hm-button">Sign Up</button>
                 </form>
             </div>
-        </div>
+        </section>
         <section class="hm-adventure-gallery">
             <figure>
                 <img src="images/rapids.webp" alt="rapid adventure"><br>
@@ -59,10 +65,10 @@
         </section>
         <section class="hm-join-page">
             <img src="images/mountains.webp" alt="This is mountain image">
-            <div>
+            <div class="sub-join-pg">
                 <h2>More Than Just a Thrill</h2>
                 <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-                <button type="submit">Join Us</button>
+                <button type="button" onclick="location.href='contact.html'">Join Us</button>
             </div>
         </section>
         <footer>
